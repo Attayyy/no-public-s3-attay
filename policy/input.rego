@@ -5,3 +5,8 @@ deny[message] {
   input.acl == "public-read"
   message := "S3 buckets cannot be publicly readable (acl: public-read)"
 }
+
+deny[reason] {
+  input.PublicAccessBlockConfiguration.BlockPublicAcls == false
+  reason = "S3 bucket allows public ACLs"
+}
