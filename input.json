@@ -1,6 +1,6 @@
 {
   "resource_type": "aws_s3_bucket",
-  "acl": "private"
+  "acl": "private",
   "PublicAccessBlockConfiguration": {
     "BlockPublicAcls": false,
     "IgnorePublicAcls": true,
