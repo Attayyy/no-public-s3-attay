@@ -2,3 +2,12 @@
   "resource_type": "aws_s3_bucket",
   "acl": "private"
 }
+
+{
+  "PublicAccessBlockConfiguration": {
+    "BlockPublicAcls": false,
+    "IgnorePublicAcls": true,
+    "BlockPublicPolicy": true,
+    "RestrictPublicBuckets": true
+  }
+}
